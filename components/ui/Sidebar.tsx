@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Sidebar() {
   return (
     <nav className="bg-white shadow-md w-64 h-screen fixed left-0 top-0">
       <div className="p-6">
