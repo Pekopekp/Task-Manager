@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/ui/Sidebar";
 
 
 const geistSans = Geist({
@@ -31,9 +32,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             Task Manager
           </h1>
         </header>
-
+        <Sidebar/>
         {/* The main content */}
-        <main className="flex-1 bg-red-500 w-full max-w-7xl mx-auto p-6">
+        <main className="flex-1 bg-red-400 w-full max-w-7xl mx-auto p-6">
           {children}
         </main>
       </body>
